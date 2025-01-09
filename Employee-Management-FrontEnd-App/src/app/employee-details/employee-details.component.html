@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Details</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .container {
+        margin-top: 50px;
+    }
+    h3 {
+        color: #007bff;
+    }
+    label {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h3 class="text-center">Employee Details</h3>
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <div>{{employee.firstName}}</div>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <div>{{employee.lastName}}</div>
+            </div>
+            <div class="form-group">
+                <label for="emailId">Email Id:</label>
+                <div>{{employee.emailId}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

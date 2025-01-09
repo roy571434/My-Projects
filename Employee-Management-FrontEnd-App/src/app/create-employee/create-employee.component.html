@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title text-center">Create Employee</h3>
+          <form (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" [(ngModel)]="employee.firstName" name="firstName">
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" [(ngModel)]="employee.lastName" name="lastName">
+            </div>
+            <div class="mb-3">
+              <label for="emailId" class="form-label">Email ID</label>
+              <input type="email" class="form-control" id="emailId" [(ngModel)]="employee.emailId" name="emailId">
+            </div>
+            <button class="btn btn-success btn-block" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
